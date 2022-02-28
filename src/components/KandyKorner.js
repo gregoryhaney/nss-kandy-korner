@@ -1,5 +1,6 @@
 import React from "react"
 import { LocationsList } from './Locations/LocationsList.js'
+import { ProductsList } from "./Products/ProductList.js"
 
   
   export const KandyKorner = () => {
@@ -14,6 +15,8 @@ import { LocationsList } from './Locations/LocationsList.js'
            <h2>Locations List</h2>
            <LocationsList />
  
+           <h2>Products List</h2>
+           <ProductsList />
          
           </>
       )
