@@ -25,7 +25,7 @@
          {
              locations.map(
                  (locationsObject) => {
-                     return <h3 key={`locations--${locationsObject.id}`}>{locationsObject.address}</h3>
+                     return <p key={`locations--${locationsObject.id}`}>{locationsObject.address}</p>
                  }
              )
          }
