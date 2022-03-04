@@ -30,7 +30,7 @@ export const EmployeeForm = () => {
 
 
 
-        // the object we wanna sent to the API when new form is submitted:
+        // the object we wanna send to the API when new form is submitted:
         // use the preventDefault to prevent default behavior of the
         // browser after the form is submitted.
     const hireEmployee = (evt) => {

@@ -38,18 +38,19 @@ export const EmployeeList = () => {
               <button onClick={() => history.push("/employees/create")}>Hire Employee</button>
             </div>
             
-
+                    
             <div>
             {
                 emps.map(
                     (displayEmployees) => {
                         return <p key={`employee--${displayEmployees.id}`}>
-                            {displayEmployees.name} works at our {displayLocations.address} site in {displayLocations.state}, {displayLocations.country}.                        
+                            {displayEmployees.name} works at {displayLocations}.                        
                         </p>
                     }
                 )
             }
             </div>
+           
         </>
     )
 }
