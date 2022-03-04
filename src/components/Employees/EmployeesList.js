@@ -44,7 +44,7 @@ export const EmployeeList = () => {
                 emps.map(
                     (displayEmployees) => {
                         return <p key={`employee--${displayEmployees.id}`}>
-                            {displayEmployees.name} works at {displayLocations}.                        
+                            {displayEmployees.name}.                        
                         </p>
                     }
                 )
