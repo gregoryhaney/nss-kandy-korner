@@ -8,7 +8,7 @@ export const EmployeeForm = () => {
 
     const [employees, updateEmployee] = useState({
         name: "",
-        location: "",
+        locationId: "",
         manager: false,
         fullTime: false,
         payRate: ""
@@ -38,7 +38,7 @@ export const EmployeeForm = () => {
 
         const newEmployee = {
             name: employees.name,
-            location: employees.locationId,
+            locationId: employees.locationId,
             manager: employees.manager,
             fullTime: employees.fullTime,
             payRate: employees.payRate

@@ -6,7 +6,7 @@
  
      useEffect(
          () => {
-             fetch("http://localhost:8089/products")
+             fetch("http://localhost:8089/products?_expand=productType")
              .then(res => res.json())
              .then((productsArray) => {
                  setProducts(productsArray)
@@ -26,7 +26,7 @@
                  (productsObject) => {
                      return <div key={`products--${productsObject.id}`}>
                          <p>{productsObject.name} costs {productsObject.cost} and 
-                         its productTypeId is {productsObject.productTypeId}</p>
+                         its type is {productsObject.productType.type}</p>
                     </div>
                  }
              )

@@ -21,7 +21,7 @@ export const EmployeeList = () => {
 
     useEffect(
         () => {
-            fetch("http://localhost:8089/employees")
+            fetch("http://localhost:8089/employees?_expand=location")
                 .then(res => res.json())
                 .then((data) => {
                     displayEmployees(data)
@@ -44,7 +44,7 @@ export const EmployeeList = () => {
                 emps.map(
                     (displayEmployees) => {
                         return <p key={`employee--${displayEmployees.id}`}>
-                            {displayEmployees.name}.                        
+                            {displayEmployees.name} works at our {displayEmployees.location.address}, {displayEmployees.location.state}, {displayEmployees.location.country} site.                        
                         </p>
                     }
                 )
