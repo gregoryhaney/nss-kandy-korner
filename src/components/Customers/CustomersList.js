@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react"
-import { useHistory } from "react-router-dom"
 
 export const CustomersList = () => {   
-    const [customers, displayCustomers] = useState([])
+    const [ customers, displayCustomers ] = useState([])
    
     useEffect(
         () => {

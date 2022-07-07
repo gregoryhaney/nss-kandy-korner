@@ -4,9 +4,9 @@ import { useHistory } from "react-router-dom";
 
 
 export const EmployeeForm = () => {
-    const [locations, setLocations] = useState([])
+    const [ locations, setLocations ] = useState([])
 
-    const [employees, updateEmployee] = useState({
+    const [ employees, updateEmployee ] = useState({
         name: "",
         locationId: "",
         manager: false,

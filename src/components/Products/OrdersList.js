@@ -1,24 +1,21 @@
-import React, { useEffect, useState } from "react"
-
-
-/* the purpose of this component is to 
-    display the purchases the current user wants
-    to make after they've clicked the "Buy Some Candy" button.
-
-    the order will display the candy name and the price.
-
+/*      The purpose of this component is to 
+        display the purchases the current user wants
+        to make after they've clicked the "Buy Some Candy" button.
+        The order will display the candy name and the price.
 */
 
+import React, { useEffect, useState } from "react"
+
 export const OrdersList = () => {
-    const [orders, setOrders] = useState([])
+    const [ orders, setOrders ] = useState([])
    
 
-// get current customer value and set to variable to use in the FETCH
-    const currentCustomer = localStorage.getItem("kandy_customer")
+// Get current customer value and set to variable to use in the FETCH
+   
 
     useEffect(
         () => {
-            fetch(`http://localhost:8089/purchases?_expand=product&customerId=${currentCustomer}`)
+            fetch(`http://localhost:8089/purchases?_expand=product&customerId=${localStorage.getItem("kandy_customer")}`)
             .then(res => res.json())
             .then((ordersArray) => {
                 setOrders(ordersArray)

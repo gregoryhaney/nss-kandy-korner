@@ -2,7 +2,7 @@
  import React, { useEffect, useState } from "react"
 
  export const LocationsList = () => {
-     const [locations, setLocations] = useState([])
+     const [ locations, setLocations ] = useState([])
    
  
      useEffect(

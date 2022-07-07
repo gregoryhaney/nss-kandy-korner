@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import { useHistory } from "react-router-dom"
 
 export const ProductsList = () => {
-     const [products, setProducts] = useState([])
+     const [ products, setProducts ] = useState([])
      const history = useHistory()
 
      useEffect(
@@ -16,12 +16,6 @@ export const ProductsList = () => {
         []
     )
 
-        const [purchase, updatePurchase] = useState({
-            amountSpent: "",
-            date: "",
-            customerId: 0,
-            productId: 0
-        })
 
         const purchaseItem = (productsObject) => {
                     

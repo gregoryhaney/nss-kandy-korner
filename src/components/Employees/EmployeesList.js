@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom"
 
 export const EmployeeList = () => {
       
-    const [emps, displayEmployees] = useState([])
+    const [ emps, displayEmployees ] = useState([])
     const history = useHistory()
 
         const getEmployees = () => {
