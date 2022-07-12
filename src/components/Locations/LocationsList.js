@@ -1,7 +1,6 @@
+import React, { useEffect, useState } from "react"
 
- import React, { useEffect, useState } from "react"
-
- export const LocationsList = () => {
+export const LocationsList = () => {
      const [ locations, setLocations ] = useState([])
    
  
@@ -14,14 +13,11 @@
              })
          },
          []
-     )
- 
+     ) 
 
 
      return (
-         <>
-           
-
+         <>       
          {
              locations.map(
                  (locationsObject) => {
@@ -31,6 +27,4 @@
          }
          </>
      )
- }
- 
- 
+}

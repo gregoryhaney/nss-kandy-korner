@@ -16,7 +16,6 @@ export const EmployeeForm = () => {
     const history = useHistory()
 
 
-
     useEffect(
         () => {
             fetch("http://localhost:8089/locations")
@@ -28,11 +27,9 @@ export const EmployeeForm = () => {
         []
     )
 
-
-
-        // the object we wanna send to the API when new form is submitted:
-        // use the preventDefault to prevent default behavior of the
-        // browser after the form is submitted.
+        // the object we will send to the API when new form is submitted:
+         // use the preventDefault to prevent default behavior of the
+         // browser after the form is submitted.
     const hireEmployee = (evt) => {
         evt.preventDefault()
 
@@ -161,10 +158,10 @@ export const EmployeeForm = () => {
             </fieldset>
 
 
-
             <button onClick={hireEmployee} className="btn btn-primary">
                 Hire Employee
             </button>
+
         </form>
     )
 }

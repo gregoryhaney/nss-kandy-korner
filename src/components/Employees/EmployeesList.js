@@ -21,7 +21,6 @@ export const EmployeeList = () => {
                 .then(getEmployees())
         }
 
-
         useEffect(
             () => {
                 getEmployees()
@@ -44,14 +43,12 @@ export const EmployeeList = () => {
                             {displayEmployees.name} works at our {displayEmployees.location.address}, {displayEmployees.location.state}, {displayEmployees.location.country} site.                        
                             <button onClick={() => {
                             fireEmployee(displayEmployees.id)
-                         }}>Fire Employee</button> 
-                        
+                         }}>Fire Employee</button>                         
                         </p>
                     }
                 )
             }
-            </div>
-           
+            </div>           
         </>
     )
 }

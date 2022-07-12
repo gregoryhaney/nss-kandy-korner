@@ -7,12 +7,9 @@
 import React, { useEffect, useState } from "react"
 
 export const OrdersList = () => {
-    const [ orders, setOrders ] = useState([])
-   
+    const [ orders, setOrders ] = useState([])   
 
-// Get current customer value and set to variable to use in the FETCH
-   
-
+// Get current customer value and set to variable to use in the FETCH 
     useEffect(
         () => {
             fetch(`http://localhost:8089/purchases?_expand=product&customerId=${localStorage.getItem("kandy_customer")}`)
@@ -23,8 +20,6 @@ export const OrdersList = () => {
         },
         []
     )
-
-
 
     return (
         <>
